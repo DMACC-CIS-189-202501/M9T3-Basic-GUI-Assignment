@@ -1,6 +1,4 @@
-# Assignment-Starter-Repo-Template
-
-TODO: Update the above to your repo name
+# M9 T3: Basic GUI Assignment
 
 ## Instructions for students
 
@@ -9,4 +7,10 @@ TODO: Update the above to your repo name
 
 ### Directions - Copy/Pasted from Canvas
 
-TODO
+Make a GUI that follows these specifications:
+
+* Title "Favorite Meal"
+* Checkbuttons: "Breakfast", "Second Breakfast", "Lunch", "Dinner" in rows 1-4 of grid
+* Label "Waiting" in row 5 of grid
+* Button "Exit" that exits in row 6 of grid
+* Add a Trigger event when a Checkbutton is checked.
