@@ -47,7 +47,7 @@ def test_chk_btn_second_breakfast():
         from assignment import chk_btn_second_breakfast, pick_second_breakfast
         assert chk_btn_second_breakfast.grid_info()['row'] == 2, "DMACC Student, the 'chk_btn_second_breakfast' is not set to grid row 2. Please set it to grid row 2."
         assert chk_btn_second_breakfast.cget('text') == 'Second Breakfast', "DMACC Student, the 'chk_btn_second_breakfast' does not have the correct text. Please set the text to 'Second Breakfast'."
-        assert chk_btn_second_breakfast.cget('command') == pick_second_breakfast, "DMACC Student, the 'chk_btn_second_breakfast' does not have the correct command. Please set the command to 'pick_second_breakfast'."
+        assert (chk_btn_second_breakfast.cget('command') == pick_second_breakfast or "pick_second_breakfast" in chk_btn_second_breakfast.cget('command')), "DMACC Student, the 'chk_btn_second_breakfast' does not have the correct command. Please set the command to 'pick_second_breakfast'."
     except ImportError:
         assert False, "DMACC Student, the 'chk_btn_second_breakfast' does not appear to be defined. Please define the check button."
 
@@ -59,7 +59,7 @@ def test_chk_btn_lunch():
         assert chk_btn_lunch.cget('text') == 'Lunch', "DMACC Student, the 'chk_btn_lunch' does not have the correct text. Please set the text to 'Lunch'."
         try:
             from assignment import pick_lunch
-            assert chk_btn_lunch.cget('command') == pick_lunch, "DMACC Student, the 'chk_btn_lunch' does not have the correct command. Please set the command to 'pick_lunch'."
+            assert (chk_btn_lunch.cget('command') == pick_lunch or "pick_lunch" in chk_btn_lunch.cget('command')), "DMACC Student, the 'chk_btn_lunch' does not have the correct command. Please set the command to 'pick_lunch'."
         except ImportError:
             assert False, "DMACC Student, the 'pick_lunch' does not appear to be defined. Please define the function to complete the check_btn_lunch testing."
     except ImportError:
@@ -73,7 +73,7 @@ def test_chk_btn_dinner():
         from assignment import chk_btn_dinner, pick_dinner
         assert chk_btn_dinner.grid_info()['row'] == 4, "DMACC Student, the 'chk_btn_dinner' is not set to grid row 4. Please set it to grid row 4."
         assert chk_btn_dinner.cget('text') == 'Dinner', "DMACC Student, the 'chk_btn_dinner' does not have the correct text. Please set the text to 'Dinner'."
-        assert chk_btn_dinner.cget('command') == pick_dinner, "DMACC Student, the 'chk_btn_dinner' does not have the correct command. Please set the command to 'pick_dinner'."
+        assert (chk_btn_dinner.cget('command') == pick_dinner or "pick_dinner" in chk_btn_dinner.cget('command')), "DMACC Student, the 'chk_btn_dinner' does not have the correct command. Please set the command to 'pick_dinner'."
     except ImportError:
         assert False, "DMACC Student, the 'chk_btn_dinner' does not appear to be defined. Please define the check button."
 
